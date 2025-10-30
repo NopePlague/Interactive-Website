@@ -56,7 +56,8 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="./login-page.html" class="btn">Login</a></li>
+        <li><a href="./signin.html" class="btn">Sign In</a></li>
+        <li><a href="./signup.html" class="btn">Sign Up</a></li>
       </ul>
 <script>
   // Unified auth script: use 'loggedIn' key and expose login/logout functions for onclick handlers.
@@ -106,7 +107,7 @@
   <!-- Content area with background image -->
   <div class="content">
     <section>
-      <img src="bg.png" alt="Background Image" class="img">
+      <img src="bg.png" alt="Background Image" class="img" loading="lazy" decoding="async">
     </section>
   </div>
 
@@ -202,6 +203,21 @@
       </div>
     </section>
   </main>
+  
+  <section id="book-suggestions">
+    <div style="display: flex;align-items: center;flex-wrap: wrap;flex-direction: column;">
+      <h2>Book Suggestions</h2>
+      <p>Share the best books you've ever read!</p>
+    </div>
+    <form id="suggestion-form">
+      <input type="text" placeholder="Your Name" required>
+      <textarea placeholder="Suggest a book and why you recommend it..." required></textarea>
+      <button type="submit">Submit Suggestion</button>
+    </form>
+  </section>
+
+
+
   <div style="padding: 20px; margin: 20px; border: 1px solid black; background: #fff; text-align: center;">
   <h3 style="color: #333;">Shubham's Fictional Book Entry</h3>
   <p style="color: #555;">Book: The Lord of the Rings</p>
